@@ -22,7 +22,7 @@ const Header =({currentUser})=>(
             currentUser ?(
             <>
             <div className='option' onClick={()=> auth.signOut() }>SIGN OUT</div>
-            <div className='userImage'><img src={currentUser.photoURL}/></div>
+            <div className='userImage'><img alt="profile" src={currentUser.photoURL}/></div>
             </>
             ):(
             <Link className='option' to='/signin'>SIGN IN</Link>)
